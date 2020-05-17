@@ -1,0 +1,130 @@
+﻿/* base of buttons */
+.base-button {
+  color: white;
+  font-weight: bolder;
+  border-radius: 50px;
+  border: none;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+}
+
+jw-modal {
+  /* modals are hidden by default */
+  display: none;
+
+  .jw-modal {
+    /* modal container fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* z-index must be higher than .jw-modal-background */
+    z-index: 1000;
+
+    /* enables scrolling for tall modals */
+    overflow: auto;
+
+    .jw-modal-body {
+      margin-top: 20%;
+
+      /**
+            * I include here my custom CSS
+            */
+      .create-note {
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .modalUpdate {
+          background-color: white;
+          padding: 1em;
+          display: block;
+          width: 600px;
+          border-radius: 15px;
+
+          -webkit-box-shadow: 6px 6px 21px -6px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 6px 6px 21px -6px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 21px -6px rgba(0, 0, 0, 0.2);
+
+          .header {
+            margin: 0;
+            padding: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            input {
+              border: none;
+              font-size: 18px;
+              width: 100%;
+              margin-bottom: 0.2em;
+            }
+
+            .close {
+              .base-button;
+              background-color: #c1bebe;
+            }
+          }
+
+          textarea {
+            resize: none;
+            border: none;
+            font-size: 18px;
+            width: 100%;
+            height: 5em;
+          }
+
+          .footer {
+            margin: 0;
+            padding: 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            .delete {
+              .base-button;
+              background-color: #cd6868;
+            }
+      
+            .update {
+              .base-button;
+              background-color: #6899cd;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .jw-modal-background {
+    /* modal background fixed across whole screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* semi-transparent green  */
+    background-color: #4ecdc4;
+    opacity: 0.33;
+
+    /* z-index must be below .jw-modal and above everything else  */
+    z-index: 900;
+  }
+}
+
+body.jw-modal-open {
+  /* body overflow is hidden to hide main scrollbar when modal window is open */
+  overflow: hidden;
+}

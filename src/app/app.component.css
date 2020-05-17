@@ -1,0 +1,97 @@
+.container {
+  padding: 1em;
+}
+
+.container .legen {
+  text-align: center;
+  width: 100%;
+}
+
+.container .create-note {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .create-note form {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 21px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container .create-note form input {
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 0.2em;
+}
+
+.container .create-note form textarea {
+  resize: none;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+  height: 5em;
+}
+
+.container .create-note form button {
+  position: sticky;
+  color: white;
+  font-weight: bolder;
+  background-color: #42b883;
+  border-radius: 50px;
+  border: none;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.container .notes {
+  margin: 0;
+  padding: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .notes .note {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: white;
+  margin: 1em;
+  padding: 1em;
+  width: 500px;
+  height: 200px;
+  box-shadow: 6px 6px 21px -6px rgba(0, 0, 0, 0.2);
+}
+
+.container .notes .note textarea {
+  margin-top: 0.2em;
+  resize: none;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.container .notes .note:hover {
+  box-shadow: 6px 6px 21px -6px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 750px) {
+  .container .notes .note {
+    width: 450px;
+  }
+}
+/*# sourceMappingURL=app.component.css.map */
