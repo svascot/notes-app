@@ -51,6 +51,7 @@ h2 {
       }
 
       button {
+        cursor: pointer;
         color: white;
         font-weight: bolder;
         background-color: #42b883;
@@ -88,24 +89,7 @@ h2 {
       padding: 1em;
       width: 500px;
       height: 200px;
-
       @include shadow;
-
-      input {
-        border: none;
-        font-size: 18px;
-        width: 100%;
-        margin-bottom: 0.2em;
-      }
-
-      textarea {
-        margin-top: 0.2em;
-        resize: none;
-        border: none;
-        font-size: 15px;
-        width: 100%;
-        height: 100%;
-      }
     }
 
     .note:hover {

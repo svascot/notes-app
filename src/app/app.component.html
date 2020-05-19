@@ -19,8 +19,9 @@
   <div class="notes" *ngIf="notes">
     <div class="note" *ngFor="let note of notes" (click)="openModalUpdate(note)">
       <div >
-        <input type="title" name="title" [(ngModel)]="note.title">
-        <textarea [(ngModel)]="note.text"></textarea>
+        <p>
+        <strong>{{note.title}}</strong>
+        <p>{{note.text}}</p>
       </div>
     </div>
   </div>

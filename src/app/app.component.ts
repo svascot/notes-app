@@ -31,6 +31,7 @@ export class AppComponent {
       //TODO Fix this!
       //this.notes = Object.values(this.notes).unshift(note.value);
       this.ngOnInit();
+      note.reset();
     });
   }
 

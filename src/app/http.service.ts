@@ -9,18 +9,18 @@ export class HttpService {
   constructor(private httpClient: HttpClient) { }
 
   getAll(){
-    return this.httpClient.get('http://localhost:8020/notes/');
+    return this.httpClient.get('http://santiagovasco.com:8020/notes/');
   }
 
   create(note){
-    return this.httpClient.post('http://localhost:8020/notes/', note);
+    return this.httpClient.post('http://santiagovasco.com:8020/notes/', note);
   }
 
   update(note){
-    return this.httpClient.put('http://localhost:8020/notes/', note);
+    return this.httpClient.put('http://santiagovasco.com:8020/notes/', note);
   }
 
   delete(id){
-    return this.httpClient.delete('http://localhost:8020/notes/' + id);
+    return this.httpClient.delete('http://santiagovasco.com:8020/notes/' + id);
   }
 }
